@@ -1,0 +1,8 @@
+body {
+    background-image: url("../images/stars-bg.png");
+}
+
+.jumbotron {
+    opacity: .5;
+    background-image: url("..images/stars-bg.png");
+}
