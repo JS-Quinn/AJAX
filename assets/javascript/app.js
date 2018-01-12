@@ -36,7 +36,7 @@ $(function() {
     }
     
     //CLICK EVENT TO ADD SEARCH TERMS TO TOPICS ARRAY AND BUTTONS
-    $("#addShow").on("click", function(event) {
+    $("#addPolitician").on("click", function(event) {
         event.preventDefault();
         var newTopic = $("#politiInput").val().trim();
         topics.push(newTopic);
@@ -63,9 +63,7 @@ $(function() {
     $(document).on("click", "#politician", displayGIF);
     $(document).on("click", ".giphy", animateGIF);
 
-    //THIS FUNCTION TO ANIMATE THE GIFS IS ALMOST ENTIRELY COPY/PASTED
-    //STILL WORKING ON UNDERSTANDING HOW IT WORKS
-    //I THINK IT'S THE SCOPE I'M STRUGGLING WITH
+    //THIS FUNCTION ANIMATES THE GIFS
     function animateGIF() {
        var state = $(this).attr("data-state");
        if (state === "still") {
